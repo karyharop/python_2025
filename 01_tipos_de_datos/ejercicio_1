@@ -1,0 +1,267 @@
+
+
+# Comienzo ejercicio 1
+
+print("=== EJERCICIO: TIPOS DE DATOS BÁSICOS ===\n")
+
+# 1. Crear una variable 'entero' con el valor numérico 42
+entero = 42
+#lo de abajo no es necesario
+print(int(edad))
+print(f"¿Qué edad tienes? {edad}")
+
+# 2. Crear una variable 'decimal' con el valor 3.14159
+decimal = 3.14159 # esto es lo que pide el ejercicio
+
+valor_pi = 3.14159
+
+decimal = float(valor_pi)
+print(f"El valor de pi es aproximadamente {valor_pi}")
+
+# 3. Crear una variable 'texto' con el valor "Python"
+texto = "Python" # esto es lo que pide el ejercicio
+python = 22
+variable_texto = str(python)
+
+# variable_texto consiste en convertir a texto la variable python y se hace con str()
+
+
+# 4. Crear una variable 'booleano' con el valor True
+booleano = True # esto es lo que pide el ejercicio
+
+Lunes_nublado = true
+print(bool(Lunes_nublado))
+
+
+
+print("=== VARIABLES ORIGINALES ===")
+# Aquí se imprimirán las variables originales (no borres estas líneas)
+print(f"entero: {entero} - Tipo: {type(entero)}")
+print(f"decimal: {decimal} - Tipo: {type(decimal)}")
+print(f"texto: {texto} - Tipo: {type(texto)}")
+print(f"booleano: {booleano} - Tipo: {type(booleano)}")
+
+print("\n=== CONVERSIONES ===")
+
+# 5. Convertir el 'entero' a texto y guardarlo en 'entero_texto'
+
+entero_texto = str(entero) # esto es lo que pide el ejercicio
+
+numero = 123
+texto = str(numero)
+print(texto)
+
+# 6. Convertir el 'decimal' a entero y guardarlo en 'decimal_entero'
+
+decimal_entero = int(decimal) # esto es lo que pide el ejercicio
+
+decimal_entero = 4.56
+numero_entero = int(decimal_entero)
+print(numero_entero)
+
+
+# 7. Convertir el 'texto' a una lista de caracteres y guardarlo en 'texto_lista'
+# Escribe aquí tu código
+
+texto_lista = list(texto) # esto es lo que pide el ejercicio
+
+# 8. Convertir el 'booleano' a entero y guardarlo en 'booleano_entero'
+# Escribe aquí tu código
+
+booleano_entero = int(booleano) # esto es lo que pide el ejercicio
+# True se convierte en 1 y False en 0
+
+print("=== VARIABLES CONVERTIDAS ===")
+# Aquí se imprimirán las variables convertidas (no borres estas líneas)
+print(f"entero_texto: {entero_texto} - Tipo: {type(entero_texto)}")
+print(f"decimal_entero: {decimal_entero} - Tipo: {type(decimal_entero)}")
+print(f"texto_lista: {texto_lista} - Tipo: {type(texto_lista)}")
+print(f"booleano_entero: {booleano_entero} - Tipo: {type(booleano_entero)}")
+
+print("\n=== EJERCICIO COMPLETADO ===")
+
+#¡ Fin del ejercicio 1! felicidad!!!
+
+
+
+print("\n")
+print("=" * 40)
+print("RETO VARIABLES")
+print("=" * 40)
+print("\n")
+
+print("=== EJERCICIO: PRESENTACIÓN PERSONAL ===\n")
+
+# 1. Crear una variable 'nombre' con tu nombre como cadena de texto
+nombre = "Kary"
+# tb se podría haber puesto como: nombreKary en comillas simples 'Kary'
+
+print(f"Indica tu nombre:  {nombre}")
+
+# 2. Crear una variable 'edad' con un número entero que represente una edad
+edad = 41
+print(f"indica tu edad:  {edad}")
+
+# 3. Crear una variable 'altura' con un número decimal que represente una altura en metros
+altura = 1.56
+print(f"Señala tu altura: {altura}")
+
+print("=== VARIABLES CREADAS ===")
+print(f"Nombre: {nombre}")
+print(f"Edad: {edad}")
+print(f"Altura: {altura}")
+
+print("\n=== CREANDO PRESENTACIÓN ===")
+
+# 4. Crear una variable 'presentacion' que combine las tres variables anteriores
+# Formato: "Me llamo [nombre], tengo [edad] años y mido [altura] metros."
+presentacion = f"Me llamo {nombre}, tengo {edad} años y mido {altura} metros."
+
+# entre parentesis, no me lo ha aceptado, debe ser así.
+
+print("=== RESULTADO FINAL ===")
+# 5. Imprimir el valor de la variable 'presentacion'
+print(presentacion)
+
+
+# las f(x) se escriben con snake case minuscula y barra baja
+
+
+print("\n")
+print("=" * 40)
+print("RETO OPERADORES")
+print("=" * 40)
+print("\n")
+
+print("=== CALCULADORA DE IMC ===\n")
+
+# 1. Declara dos variables: 'peso' con valor 70 (en kilogramos) y 'altura' con valor 1.75 (en metros)
+peso = 70 "kg"
+
+altura = 1.75 "m"
+
+print(f"Peso: {peso} kg")
+print(f"Altura: {altura} m")
+
+print("\n=== CÁLCULO DEL IMC ===")
+
+# 2. Calcula el IMC utilizando la fórmula: peso / (altura ** 2)
+IMC = peso / (altura ** 2) 
+# significa elevar al cuadrado
+
+# 3. Almacena el resultado en una variable llamada 'imc'
+print(f"IMC: {IMC}")
+
+# 4. Redondea el resultado a dos decimales usando la función round()
+resultado = round(IMC, 2)
+
+print("=== RESULTADO ===")
+# 5. Imprime el resultado con un mensaje descriptivo
+print(f"Tu Índice de Masa Corporal (IMC) es: {resultado}")
+
+print("\n")
+print("=" * 40)
+print("IF EELIF ELSE")
+print("=" * 40)
+print("\n")
+
+#Crea un programa que solicite al usuario su edad mediante input() y 
+# determine en qué categoría se encuentra según los siguientes criterios:
+
+#Si la edad es menor que 13 años: "Eres un niño"
+#Si la edad está entre 13 y 17 años (inclusive): "Eres un adolescente"
+#Si la edad está entre 18 y 64 años (inclusive): "Eres un adulto"
+#Si la edad es 65 años o mayor: "Eres un adulto mayor"
+#El programa debe mostrar el mensaje correspondiente usando print(). 
+# Recuerda que input() devuelve una cadena de texto, 
+# por lo que necesitarás convertir la entrada a número entero usando int().
+
+print("=" * 40)
+
+print("BASE_DATOS_USUARIOS")
+
+print("=" * 40)
+
+#Estructura tu código de la siguiente manera:
+
+#Solicita la edad al usuario
+#Convierte la entrada a entero
+#Usa una estructura if-elif-else para evaluar la edad
+#Muestra el mensaje correspondiente
+#Ejemplo de ejecución:
+
+#Si el usuario introduce 15, debe mostrar: "Eres un adolescente"
+#Si el usuario introduce 25, debe mostrar: "Eres un adulto"
+
+
+# Solicitar la edad al usuario
+
+
+#forma concisa
+# edad = int(int(input""inrtroduce tu edad: "))
+
+
+# Convertir la entrada a entero
+edad = int(edad_input)
+# Evaluar la edad usando if-elif-else
+if edad < 13:
+    print("Eres un niño.")
+elif edad <= 17:
+# elif edad >= 13 and <= 17
+    print("Eres un adolescente.")
+elif edad <= 64:
+    print("Eres un adulto.")
+else:
+    print("Eres un adulto mayor")
+
+# Mostrar el mensaje correspondiente
+
+print(edad)
+
+
+
+# De esta forma lo ha hecho Reyes...
+
+edad_usuario = input("Dame la edad del usuario: ")
+
+try:
+# Convertir la entrada a entero
+edad = int(edad_usuario)
+
+# Evaluar la edad usando if-elif-else
+if edad >= 65:
+mensaje = "adulto mayor"
+elif edad >= 18:
+mensaje = "adulto"
+elif edad >= 13:
+mensaje = "adolescente"
+elif edad > 0:
+mensaje = "niño"
+else:
+mensaje = "error. Por favor, escriba un número positivo"
+
+# Mostrar el mensaje correspondiente
+print(f"Eres un {mensaje}" if edad>0 else f"Es un {mensaje}")
+
+except ValueError:
+print("Por favor, introduce un número para la edad.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

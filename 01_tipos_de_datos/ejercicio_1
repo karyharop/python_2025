@@ -247,15 +247,153 @@ except ValueError:
 print("Por favor, introduce un número para la edad.")
 
 
+print("\n")
+print("=" * 40)
+print("BUCLE FOR ANIDADO")
+print("=" * 40)
+print("\n")
+
+print("=== PROGRAMA: GENERADOR DE PATRÓN TRIANGULAR ===\n")
+
+# Solicitar al usuario la altura del triángulo
+
+altura_triangulo = input("señala la altura del triangulo: ")
+
+# Convertir la entrada a número entero
+altura = int(altura_triangulo)
 
 
+print(f"\nGenerando patrón triangular de altura {altura}: ")
+print("-" * 30)
+
+# Generar el patrón usando bucles for anidados
+# Bucle externo: para cada fila (desde 1 hasta la altura)
+for i in range(1, altura + 1):
+    
+    # Bucle interno: para cada número en la fila actual (desde 1 hasta el número de fila)
+    for numero in range(1, i + 1):
+
+     # Imprimir cada número seguido de un espacio (sin salto de línea)
+        print(numero, end=" ")
+
+    # Después de completar una fila, hacer un salto de línea
+    print("\n")
+
+print("-" * 30)
+print("Patrón completado!")
+
+print("\n")
+print("=" * 40)
+print("FUNCIONES")
+print("=" * 40)
+print("\n")
+
+print("=== PROGRAMA: CALCULADORA DE ÁREA DE CÍRCULO ===\n")
+
+# Definir la función calcular_area_circulo
+def calcular_area_circulo(radio):
+    # 1. Definir el valor de pi
+    PI = 3.14159    
+    
+    # 2. Calcular el área usando la fórmula: π * radio²
+    area = PI * (radio ** 2)
+    
+    # 3. Devolver el resultado
+    return area    
+# para devolver un resultado la palabra clave es return
+
+print("=== PRUEBAS DE LA FUNCIÓN ===")
+
+# Prueba 1: radio = 5
+radio1 = 5
+# Llamar a la función y guardar el resultado
+area1 = calcular_area_circulo(area1)
 
 
+print(f"Radio: {radio1} -> Área: {area1}")
+
+# Prueba 2: radio = 3
+radio2 = 3
+# Llamar a la función y guardar el resultado
+area2 = calcular_area_circulo(area2)
 
 
+print(f"Radio: {radio2} -> Área: {area2}")
+
+# Prueba 3: radio = 10.5
+radio3 = 10.5
+# Llamar a la función y guardar el resultado
+area3 = calcular_area_circulo(area3)
 
 
+print(f"Radio: {radio3} -> Área: {area3}")
 
+print("\n=== MODO INTERACTIVO ===")
+# Solicitar al usuario un radio y calcular su área
+radio_input = input("Introduce un valor para el radio: ")
+
+# Convertir la entrada a número decimal
+radio_usuario = float(radio_input)
+
+# Llamar a la función con el radio del usuario
+area_usuario = calcular_area_circulo(radio_usuario)
+
+print(f"El área de un círculo con radio {radio_usuario} es: {area_usuario}")
+
+
+print("\n")
+print("=" * 40)
+print("LISTAS")
+print("=" * 40)
+print("\n")
+
+def filtrar_mayores(lista, umbral):
+    """
+    Filtra los números de una lista que son mayores que un valor umbral dado.
+    
+    Args:
+        lista (list): Lista de números enteros a filtrar.
+        umbral (int): Valor umbral para la comparación.
+        
+    Returns:
+        list: Nueva lista con los números mayores que el umbral.
+    * Se inicia una lista vacia para guardar los numeros que cumplan la condición.
+    
+    """
+    
+    resultado = []
+    
+    # TODO: haz aquí el código de la función:
+    # Recorremos cada numero de la lista
+    # Una forma de hacerlo, la más simple:
+    for n in lista: 
+        # Comprobamos si el mumero es mayor al umbral
+        if n > umbral:
+            # Si se cumple el if, se añade a la lista de resultados
+            resultado.append(n)
+    
+    return resultado
+
+# Otra forma de hacerlo con comprension de listas
+
+def filtrar_mayores(lista, umbral):
+    return [n for n in lista if n > umbral]
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# Ejemplos de uso
+if __name__ == "__main__":
+    print(filtrar_mayores([5, 10, 15, 20], 12))  # Debe devolver [15, 20]
+    print(filtrar_mayores([1, 2, 3], 5))         # Debe devolver [] (lista vacía)
 
 
 

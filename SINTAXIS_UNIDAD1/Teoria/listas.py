@@ -27,7 +27,8 @@ CRUD: (Create, Read, Update, Delete)
     
     
 * Añadir o combinar:
-    * nombres.append("Patricia")
+    * nombres.append("Patricia") la tuve mala en el examen...
+    debo recordarla muy bien.
     * nombres.extend(['n1', 'n2'])
     * nombres.insert(index, 'Bob')
 

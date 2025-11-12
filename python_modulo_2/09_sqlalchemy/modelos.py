@@ -47,6 +47,7 @@ class Categoria(BaseModel):
     codigo: str
     
 class CategoriaORM(Base):
+    __tablename__= "categoria"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     nombre: Mapped[str] = mapped_column(String, nullable=False)
     codigo: Mapped[str] = mapped_column(String, nullable=False)
@@ -60,6 +61,7 @@ class Producto(BaseModel):
     disponible: Boolean
     
 class ProductoORM(Base):
+    __tablename__= "producto"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     nombre: Mapped[str] = mapped_column(String, nullable=False)
     precio: Mapped[float] = mapped_column(Float,nullable=False)
@@ -76,6 +78,7 @@ class Evento(BaseModel):
     activo: bool
     
 class EventoORM(Base):
+    __tablename__= "evento"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     nombre: Mapped[str] = mapped_column(String, nullable=False)
     fecha: Mapped[date] = mapped_column(Date, nullable=False)
@@ -92,6 +95,7 @@ class Cliente(BaseModel):
     direccion: Optional [str] = None
     
 class ClienteORM(Base):
+    __tablename__= "cliente"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     nombre: Mapped[str] = mapped_column(String, nullable=False)
     email: Mapped[str] = mapped_column(String, nullable=False)
@@ -108,6 +112,7 @@ class Articulo(BaseModel):
     vistas: Optional[int] = 0
     
 class ArticuloORM(Base):
+    __tablename__= "articulo"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     titulo: Mapped[str] = mapped_column(String, nullable=False)
     contenido: Mapped[str] = mapped_column(String, nullable=False)

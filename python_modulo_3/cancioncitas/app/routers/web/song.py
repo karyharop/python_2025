@@ -19,3 +19,4 @@ def list_songs(request: Request, db: Session = Depends(get_db)):
         "songs/list.html",
         {"request": request, "songs": songs}
     )
+    
